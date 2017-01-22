@@ -20,7 +20,7 @@ end
 def playAgain
 	puts "Should be play again?"
 	pg = gets.chomp
-	if pg == 'y' || pg == 'Y'
+	if pg == 'y' || pg == 'Y' || pg == 'YES' || pg == 'Yes' || pg == 'yes'
 		choosePlay
 	else
 		exit

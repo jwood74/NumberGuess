@@ -11,7 +11,7 @@ def youGuess
 
 	puts "Cool. You'll pick a number and I'll guess what it is."
 	sleep(1)
-	print "First thing first. Let's play between 0 and ? "
+	print "First thing first. Let's play between 0 and ? (What should the maximum be?)"
 	@upper = gets.chomp
 	@upper = @upper.to_i
 	sleep(1)
@@ -22,7 +22,7 @@ def youGuess
 		sleep(2)
 		print "Ready? (y/n) "
 		read = gets.chomp
-		if read == "y" || read == "Y"
+		if read == "y" || read == "Y" || read == "yes"
 			@ready = true
 		end
 	end
@@ -71,8 +71,8 @@ def compGuess
 	@guesses = []
 	@ans = 0
 
-	puts "My turn!!! Now I get to think of the number"
-	print "I'll think of a number between 0 and ? "
+	puts "My turn!!! Now I get to think of the number."
+	print "I'll think of a number between 0 and ? (What should the maximum be?)"
 	@upper = gets.chomp
 	@upper = @upper.to_i
 	puts "Okay! Between 0 and " + @upper.to_s + ". Let me think of my number."
